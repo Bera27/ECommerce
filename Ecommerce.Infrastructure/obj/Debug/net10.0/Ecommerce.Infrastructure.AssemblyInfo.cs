@@ -10,13 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("0157a9ea-8642-426e-839e-39853ffc82b4")]
-[assembly: System.Reflection.AssemblyCompanyAttribute("Ecommerce.API")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Ecommerce.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d6da823999b3aa88d961bedd2e97738a336700e")]
-[assembly: System.Reflection.AssemblyProductAttribute("Ecommerce.API")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Ecommerce.API")]
+[assembly: System.Reflection.AssemblyProductAttribute("Ecommerce.Infrastructure")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Ecommerce.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
