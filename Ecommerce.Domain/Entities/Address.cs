@@ -6,6 +6,7 @@ namespace Ecommerce.Domain.Entities
     {
         public Guid Id { get; set; }
         public Guid CustomerId { get; set; }
+        public Customer Customer { get; set; } = null!;
         public BrazilianState State { get; set; }
         public required string City { get; set; }
         public required string Street { get; set; }

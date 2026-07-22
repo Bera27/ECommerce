@@ -13,6 +13,7 @@ namespace Ecommerce.Domain.Entities
         public decimal Length { get; set; }
         public int Quantity { get; set; }
         public required string Description { get; set; }
+        public IList<Image> Images { get; set; } = [];
 
         public void EnsureStockAvailable(int quantity)
         {

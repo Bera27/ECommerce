@@ -4,5 +4,7 @@ namespace Ecommerce.Domain.Entities
     {
         public Guid Id { get; set; }
         public Guid CustomerId { get; set; }
+
+        public IList<CartItem> Items { get; set; } = [];
     }
 }

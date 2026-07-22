@@ -1,3 +1,4 @@
+using System.Security.AccessControl;
 using Ecommerce.Domain.Exceptions;
 
 namespace Ecommerce.Domain.Entities
@@ -6,6 +7,7 @@ namespace Ecommerce.Domain.Entities
     {
         public Guid Id { get; set; }
         public Guid OrderId { get; set; }
+        public Order Order { get; set; } = null!;
         public Guid ProductId { get; set; }
         public required string NameProduct { get; set; }
         public decimal UnitPrice { get; set; }

@@ -1251,6 +1251,29 @@
         "build": {
           "buildTransitive/net8.0/_._": {}
         }
+      },
+      "Ecommerce.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Ecommerce.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Ecommerce.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ecommerce.Application.dll": {}
+        }
+      },
+      "Ecommerce.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Ecommerce.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ecommerce.Domain.dll": {}
+        }
       }
     }
   },
@@ -3658,10 +3681,22 @@
         "system.security.cryptography.protecteddata.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Ecommerce.Application/1.0.0": {
+      "type": "project",
+      "path": "../Ecommerce.Application/Ecommerce.Application.csproj",
+      "msbuildProject": "../Ecommerce.Application/Ecommerce.Application.csproj"
+    },
+    "Ecommerce.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Ecommerce.Domain/Ecommerce.Domain.csproj",
+      "msbuildProject": "../Ecommerce.Domain/Ecommerce.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "Ecommerce.Application >= 1.0.0",
+      "Ecommerce.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 10.0.10"
@@ -3692,7 +3727,14 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/gabriel/Documentos/dev/ECommerce/Ecommerce.Application/Ecommerce.Application.csproj": {
+              "projectPath": "/home/gabriel/Documentos/dev/ECommerce/Ecommerce.Application/Ecommerce.Application.csproj"
+            },
+            "/home/gabriel/Documentos/dev/ECommerce/Ecommerce.Domain/Ecommerce.Domain.csproj": {
+              "projectPath": "/home/gabriel/Documentos/dev/ECommerce/Ecommerce.Domain/Ecommerce.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

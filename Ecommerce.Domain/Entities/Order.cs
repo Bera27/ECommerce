@@ -19,6 +19,7 @@ namespace Ecommerce.Domain.Entities
         public required string ZipCode { get; set; }
         public decimal ShippingCost { get; set; }
         public decimal Total { get; set; }
+        public IList<OrderItem> Items { get; set; } = [];
 
         // Atualiza o status do pedido, validando se a transição é permitida pelo fluxo; lança DomainException se não for
         public void UpdateStatus(OrderStatus status)
