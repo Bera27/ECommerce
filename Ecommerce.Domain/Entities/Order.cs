@@ -10,7 +10,7 @@ namespace Ecommerce.Domain.Entities
         public Guid CustomerId { get; set; }
         public OrderStatus Status { get; set; }
         public DateTime OrderDate { get; set; }
-        public required string State { get; set; }
+        public BrazilianState State { get; set; }
         public required string City { get; set; }
         public required string Street { get; set; }
         public required string Neighborhood { get; set; }
@@ -21,7 +21,8 @@ namespace Ecommerce.Domain.Entities
         public decimal Total { get; set; }
         public IList<OrderItem> Items { get; set; } = [];
 
-        // Atualiza o status do pedido, validando se a transição é permitida pelo fluxo; lança DomainException se não for
+
+        // O método atualiza o status do pedido, validando se a transição é permitida pelo fluxo; lança DomainException se não for
         public void UpdateStatus(OrderStatus status)
         {
             switch (Status)

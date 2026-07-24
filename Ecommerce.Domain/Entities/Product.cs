@@ -13,6 +13,7 @@ namespace Ecommerce.Domain.Entities
         public decimal Length { get; set; }
         public int Quantity { get; set; }
         public required string Description { get; set; }
+        public bool IsActive { get; private set; } = true;
         public IList<Image> Images { get; set; } = [];
 
         public void EnsureStockAvailable(int quantity)
@@ -22,6 +23,22 @@ namespace Ecommerce.Domain.Entities
                 throw new DomainException(
                     $"Estoque insuficiente para o produto {Name}. Disponível: {Quantity}, solicitado: {quantity}.");
             }
+        }
+
+        public void Activete()
+        {
+            if(IsActive)
+                throw new DomainException($"O produto '{Name}' já está ativo.");
+
+            IsActive = true;
+        }
+
+        public void Deactivate()
+        {
+            if(!IsActive)
+                throw new DomainException($"O produto '{Name}' já está inativo.");
+
+            IsActive = false;
         }
     }
 }

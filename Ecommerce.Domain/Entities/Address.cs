@@ -11,7 +11,7 @@ namespace Ecommerce.Domain.Entities
         public required string City { get; set; }
         public required string Street { get; set; }
         public required string Neighborhood { get; set; }
-        public required string Complement { get; set; }
+        public string Complement { get; set; } = null!;
         public required string Number { get; set; }
         public required string ZipCode { get; set; }
     }

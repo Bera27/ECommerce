@@ -22,3 +22,15 @@ C:/dev/ECommerce/Ecommerce.Domain/obj/Debug/net10.0/ref/Ecommerce.Domain.dll
 /home/gabriel/Documentos/dev/ECommerce/Ecommerce.Domain/obj/Debug/net10.0/refint/Ecommerce.Domain.dll
 /home/gabriel/Documentos/dev/ECommerce/Ecommerce.Domain/obj/Debug/net10.0/Ecommerce.Domain.pdb
 /home/gabriel/Documentos/dev/ECommerce/Ecommerce.Domain/obj/Debug/net10.0/ref/Ecommerce.Domain.dll
+C:\dev\ECommerce\Ecommerce.Domain\bin\Debug\net10.0\Ecommerce.Domain.deps.json
+C:\dev\ECommerce\Ecommerce.Domain\bin\Debug\net10.0\Ecommerce.Domain.dll
+C:\dev\ECommerce\Ecommerce.Domain\bin\Debug\net10.0\Ecommerce.Domain.pdb
+C:\dev\ECommerce\Ecommerce.Domain\obj\Debug\net10.0\Ecommerce.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\ECommerce\Ecommerce.Domain\obj\Debug\net10.0\Ecommerce.Domain.AssemblyInfoInputs.cache
+C:\dev\ECommerce\Ecommerce.Domain\obj\Debug\net10.0\Ecommerce.Domain.AssemblyInfo.cs
+C:\dev\ECommerce\Ecommerce.Domain\obj\Debug\net10.0\Ecommerce.Domain.csproj.CoreCompileInputs.cache
+C:\dev\ECommerce\Ecommerce.Domain\obj\Debug\net10.0\Ecommerce.Domain.sourcelink.json
+C:\dev\ECommerce\Ecommerce.Domain\obj\Debug\net10.0\Ecommerce.Domain.dll
+C:\dev\ECommerce\Ecommerce.Domain\obj\Debug\net10.0\refint\Ecommerce.Domain.dll
+C:\dev\ECommerce\Ecommerce.Domain\obj\Debug\net10.0\Ecommerce.Domain.pdb
+C:\dev\ECommerce\Ecommerce.Domain\obj\Debug\net10.0\ref\Ecommerce.Domain.dll

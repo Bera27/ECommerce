@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net10.0": {
       "Azure.Core/1.47.1": {
@@ -3703,36 +3703,36 @@
     ]
   },
   "packageFolders": {
-    "/home/gabriel/.nuget/packages/": {}
+    "C:\\Users\\Gabriel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/gabriel/Documentos/dev/ECommerce/Ecommerce.Infrastructure/Ecommerce.Infrastructure.csproj",
+      "projectUniqueName": "C:\\dev\\ECommerce\\Ecommerce.Infrastructure\\Ecommerce.Infrastructure.csproj",
       "projectName": "Ecommerce.Infrastructure",
-      "projectPath": "/home/gabriel/Documentos/dev/ECommerce/Ecommerce.Infrastructure/Ecommerce.Infrastructure.csproj",
-      "packagesPath": "/home/gabriel/.nuget/packages/",
-      "outputPath": "/home/gabriel/Documentos/dev/ECommerce/Ecommerce.Infrastructure/obj/",
+      "projectPath": "C:\\dev\\ECommerce\\Ecommerce.Infrastructure\\Ecommerce.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
+      "outputPath": "C:\\dev\\ECommerce\\Ecommerce.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/gabriel/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
-        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "/home/gabriel/Documentos/dev/ECommerce/Ecommerce.Application/Ecommerce.Application.csproj": {
-              "projectPath": "/home/gabriel/Documentos/dev/ECommerce/Ecommerce.Application/Ecommerce.Application.csproj"
+            "C:\\dev\\ECommerce\\Ecommerce.Application\\Ecommerce.Application.csproj": {
+              "projectPath": "C:\\dev\\ECommerce\\Ecommerce.Application\\Ecommerce.Application.csproj"
             },
-            "/home/gabriel/Documentos/dev/ECommerce/Ecommerce.Domain/Ecommerce.Domain.csproj": {
-              "projectPath": "/home/gabriel/Documentos/dev/ECommerce/Ecommerce.Domain/Ecommerce.Domain.csproj"
+            "C:\\dev\\ECommerce\\Ecommerce.Domain\\Ecommerce.Domain.csproj": {
+              "projectPath": "C:\\dev\\ECommerce\\Ecommerce.Domain\\Ecommerce.Domain.csproj"
             }
           }
         }
@@ -3747,10 +3747,11 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net10.0": {
+        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": {
@@ -3786,7 +3787,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.110/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
