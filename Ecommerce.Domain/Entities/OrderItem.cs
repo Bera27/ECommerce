@@ -1,4 +1,3 @@
-using System.Security.AccessControl;
 using Ecommerce.Domain.Exceptions;
 
 namespace Ecommerce.Domain.Entities
@@ -22,6 +21,7 @@ namespace Ecommerce.Domain.Entities
             }
 
             UnitPrice -= (UnitPrice * discount) / 100m;
+            Discount = discount;
         }
     }
 }

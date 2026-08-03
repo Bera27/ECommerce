@@ -8,6 +8,8 @@ namespace Ecommerce.Infrastructure.Data.Mappings
     {
         public void Configure(EntityTypeBuilder<CartItem> builder)
         {
+            builder.ToTable("CartItems");
+
             builder.HasKey(x => x.Id);
 
             builder.Property(x => x.Id)
