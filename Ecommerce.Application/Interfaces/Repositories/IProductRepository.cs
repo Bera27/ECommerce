@@ -4,7 +4,7 @@ namespace Ecommerce.Application.Interfaces.Repositories
 {
     public interface IProductRepository
     {
-        Task<Product> GetByIdAsync(Guid productId);
+        Task<Product?> GetByIdAsync(Guid productId);
 
         Task<IEnumerable<Product>> GetAllProductsAsync();
 
@@ -12,7 +12,7 @@ namespace Ecommerce.Application.Interfaces.Repositories
 
         Task UpdateProductAsync(Product product);
 
-        Task RemoveProductAsync(Guid productId);
+        Task<bool> RemoveProductAsync(Guid productId);
 
     }
 }
