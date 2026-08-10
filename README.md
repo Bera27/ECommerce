@@ -10,7 +10,7 @@ API de e-commerce single-vendor construída em **ASP.NET Core**, aplicando **Cle
 Este projeto tem dois objetivos principais:
 
 1. **Aprofundar conhecimento prático** de arquitetura em camadas, DDD e padrões de projeto aplicados a um cenário real de e-commerce.
-2. **Servir como peça de portfólio**, demonstrando decisões técnicas justificadas — útil tanto para consulta futura quanto para discussão em entrevistas técnicas.
+2. **Servir como peça de portfólio**, demonstrando decisões técnicas justificadas.
 
 ## 🏗️ Arquitetura
 
