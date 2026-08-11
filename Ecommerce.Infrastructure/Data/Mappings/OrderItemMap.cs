@@ -30,7 +30,7 @@ namespace Ecommerce.Infrastructure.Data.Mappings
                 .HasPrecision(10, 2)
                 .IsRequired();
 
-            builder.HasOne<Product>()
+            builder.HasOne(x => x.Product)
                 .WithMany()
                 .HasForeignKey(x => x.ProductId)
                 .HasConstraintName("FK_OrderItem_Product_ProductId")
