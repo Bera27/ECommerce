@@ -1,17 +1,17 @@
 using Ecommerce.Domain.Enums;
 
-namespace Ecommerce.Domain.Entities
+namespace Ecommerce.Application.Requests
 {
-    public class Address
+    public class RegisterCustomerRequest
     {
-        public Guid Id { get; set; }
-        public Guid CustomerId { get; set; }
-        public Customer Customer { get; set; } = null!;
+        public required string Name { get; set; }
+        public required string Email { get; set; }
+        public required string Password { get; set; }
         public BrazilianState State { get; set; }
         public required string City { get; set; }
         public required string Street { get; set; }
         public required string Neighborhood { get; set; }
-        public string? Complement { get; set; } = null!;
+        public string? Complement { get; set; }
         public required string Number { get; set; }
         public required string ZipCode { get; set; }
     }
