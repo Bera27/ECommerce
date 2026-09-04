@@ -3,6 +3,7 @@ using Ecommerce.Application.Interfaces.Services;
 using Ecommerce.Application.Requests;
 using Ecommerce.Application.Responses;
 using Ecommerce.Domain.Entities;
+using Ecommerce.Domain.Enums;
 using Ecommerce.Domain.Exceptions;
 
 namespace Ecommerce.Application.UseCases.Customers
@@ -24,6 +25,11 @@ namespace Ecommerce.Application.UseCases.Customers
             if(email != null)
                 throw new DomainException("Já existe uma conta com este e-mail.");
 
+            bool getState = Enum.TryParse<BrazilianState>(customerRequest.State, out BrazilianState state);
+
+            if(!getState)
+                throw new DomainException("Estado inválido");
+
             var passwordHash = _passHash.HashPassword(customerRequest.Password); 
 
             var newCustomer = new Customer
@@ -35,7 +41,7 @@ namespace Ecommerce.Application.UseCases.Customers
 
             var newAddress = new Address
             {
-                State = customerRequest.State,
+                State = state,
                 City = customerRequest.City,
                 Street = customerRequest.Street,
                 Neighborhood = customerRequest.Neighborhood,
@@ -50,6 +56,7 @@ namespace Ecommerce.Application.UseCases.Customers
 
             return new RegisterCustomerResponse
             {
+                Id = newCustomer.Id,
                 Name = newCustomer.Name,
                 Email = newCustomer.Email
             };

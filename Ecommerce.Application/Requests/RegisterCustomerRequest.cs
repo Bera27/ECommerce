@@ -7,7 +7,7 @@ namespace Ecommerce.Application.Requests
         public required string Name { get; set; }
         public required string Email { get; set; }
         public required string Password { get; set; }
-        public BrazilianState State { get; set; }
+        public required string State { get; set; }
         public required string City { get; set; }
         public required string Street { get; set; }
         public required string Neighborhood { get; set; }
