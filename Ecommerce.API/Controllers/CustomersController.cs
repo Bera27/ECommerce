@@ -11,15 +11,19 @@ namespace Ecommerce.API.Controllers
     {
         private readonly RegisterCustomer _registerCustomer;
         private readonly ILogger<CustomersController> _logger;
+        private readonly Login _login;
 
-        public CustomersController(RegisterCustomer registerCustomer, ILogger<CustomersController> logger)
+        public CustomersController(RegisterCustomer registerCustomer,
+               ILogger<CustomersController> logger,
+               Login login)
         {
             _registerCustomer = registerCustomer;
+            _login = login;
             _logger = logger;
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] RegisterCustomerRequest customerRequest)
+        public async Task<IActionResult> PostCustomersAsync([FromBody] RegisterCustomerRequest customerRequest)
         {
             try
             {
@@ -33,9 +37,29 @@ namespace Ecommerce.API.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Erro ao registrar novo cliente:");
+                _logger.LogError(ex, "Erro ao registrar novo cliente.");
 
-                return StatusCode(500, $"Erro interno no servidor");
+                return StatusCode(500, "Erro interno no servidor");
+            }
+        }
+
+        [HttpPost("login")]
+        public async Task<IActionResult> PostLoginAsync([FromBody] LoginRequest loginRequest)
+        {
+            try
+            {
+                var request = await _login.ExecuteAsync(loginRequest);
+
+                return Ok(request);
+            }
+            catch(DomainException)
+            {
+                return StatusCode(401, "Email ou senha incorreto ou inexistente.");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro ao fazer login.");
+                return StatusCode(500, "Erro interno no servidor");
             }
         }
     }
