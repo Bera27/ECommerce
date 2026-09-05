@@ -23,7 +23,7 @@ namespace Ecommerce.Application.UseCases.Customers
         {
             var customer = await _customerRepository.GetByEmailAsync(loginRequest.Email);
 
-            if(customer == null || !_passHash.ComparePasswordHash(customer.PasswordHash, loginRequest.Password))
+            if(customer == null || !_passHash.ComparePasswordHash(loginRequest.Password, customer.PasswordHash))
                 throw new DomainException("Email ou senha incorreto ou inexistente.");
 
             var token = _tokenService.GenerateToken(customer.Id, customer.Email);
